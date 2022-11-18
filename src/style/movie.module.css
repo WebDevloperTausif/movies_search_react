@@ -1,0 +1,22 @@
+.container {
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.movie_grid {
+  width: 50%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+}
+.movie_poster {
+  width: 100%;
+}
+.movie_poster img {
+  width: 100%;
+}
+.movie_info {
+  width: 100%;
+}

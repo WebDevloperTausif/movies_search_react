@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+}
+.childcontainer {
+  width: 30%;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+.inputSec {
+  width: 100%;
+  padding: 2rem;
+}
+.popupSec {
+  width: 100%;
+  border: 1px solid black;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  height: 50vh;
+  scroll-behavior: auto;
+}
+.popupBox {
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+}
+.imgs img{
+  width:50%;
+  height: 30vh;
+}
