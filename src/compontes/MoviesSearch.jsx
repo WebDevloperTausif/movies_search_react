@@ -26,13 +26,15 @@ const MoviesSearch = () => {
   };
   return (
     <div className={moviescss.container}>
-      <h1>MoviesSearch</h1>
+      <h1>Movies Corn</h1>
       <div className={moviescss.childcontainer}>
         <div className={moviescss.inputSec}>
+          <h1>MoviesSearch</h1>
           <input
             type="text"
             onChange={(e) => setText(e.target.value)}
             onKeyDown={PupupOnOff}
+            placeholder="Type here Movies title for search"
           />
         </div>
         {temp ? (

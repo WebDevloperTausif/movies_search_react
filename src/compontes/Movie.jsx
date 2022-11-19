@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Rating from "./Rating";
-import moviecss from "../style/movie.module.css"
+import moviecss from "../style/movie.module.css";
 const Movie = () => {
   const params = useParams().id;
   const [movie, setmovie] = useState([]);
@@ -18,37 +18,43 @@ const Movie = () => {
   }, [params, movie]);
 
   return (
-      <div className={moviecss.container}>
-        <div className={moviecss.movie_grid} >
-          <div className={moviecss.movie_poster}>
-            <img src={movie.Poster} alt="" />
+    <div className={moviecss.container}>
+      <div className={moviecss.movie_grid}>
+        <div className={moviecss.movie_poster}>
+          <img src={movie.Poster} alt="" />
+        </div>
+        <div className={moviecss.movie_info}>
+          <div className={moviecss.movie_title}>
+            <span>Title :</span>
+            <p> {movie.Title}</p>
           </div>
-          <div className={moviecss.movie_info}>
-            <h3 className={moviecss.movie_title}>Title : {movie.Title}</h3>
-            <div className={moviecss.movie_misc_info}>
-              <Rating rate={movie.Ratings} />
-            </div>
-            <p className={moviecss.genre}>
-              <b>Genre:</b> {movie.Genre}
-            </p>
-            <p className={moviecss.writer}>
-              <b>writer:</b> {movie.Writer}
-            </p>
-            <p className={moviecss.actors}>
-              <b>actors:</b> {movie.Actors}
-            </p>
-            <p className={moviecss.plot}>
-              <b>plot:</b> {movie.Plot}
-            </p>
-            <p className={moviecss.language}> Language:{movie.Language}</p>
-            <p className={moviecss.awards}>
-              <b>
-                <i className="fas fa-award"></i>
-              </b>
-              {movie.Awards}
-            </p>
+          <div className={moviecss.movie_misc_info}>
+            <Rating rate={movie.Ratings} />
+          </div>
+          <div className={moviecss.genre}>
+            <span>Genre:</span> <p>{movie.Genre}</p>
+          </div>
+          <div className={moviecss.writer}>
+            <span>writer:</span> <p>{movie.Writer}</p>
+          </div>
+          <div className={moviecss.actors}>
+            <span>actors:</span> <p>{movie.Actors}</p>
+          </div>
+          <div className={moviecss.plot}>
+            <span>plot:</span> <p>{movie.Plot}</p>
+          </div>
+          <div className={moviecss.language}>
+            <span>Language:</span>
+            <p>{movie.Language}</p>
+          </div>
+          <div className={moviecss.awards}>
+            <span>
+              <i className="fas fa-award"></i>
+            </span>
+            <p>{movie.Awards}</p>
           </div>
         </div>
+      </div>
     </div>
   );
 };

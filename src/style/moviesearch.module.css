@@ -2,7 +2,7 @@
   width: 100%;
 }
 .childcontainer {
-  width: 30%;
+  width: 50%;
   align-items: center;
   text-align: center;
   margin: auto;
@@ -11,6 +11,17 @@
 .inputSec {
   width: 100%;
   padding: 2rem;
+  border: .1rem solid black;
+  display: flex;
+  justify-content: space-around;
+}
+.inputSec input{
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: white;
+  outline: none;
+  border: none;
 }
 .popupSec {
   width: 100%;

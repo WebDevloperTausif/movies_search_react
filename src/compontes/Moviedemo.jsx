@@ -1,5 +1,5 @@
 import React from "react";
-import moviecss from "../style/movie.module.css";
+import moviecss from "../style/moviesdemo.module.css";
 const Moviedemo = () => {
   return (
     <div className={moviecss.container}>
